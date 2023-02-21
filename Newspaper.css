@@ -5,7 +5,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 62.5%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -44,7 +44,7 @@ main {
 	color: white;
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 .hamburger {
@@ -66,11 +66,10 @@ main {
 	width: 20px;
 }
 .hamburger-text {
-	padding-left: 10px;
 	color: white;
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 
@@ -92,17 +91,12 @@ main {
 .rightmenu {
 	grid-column: 10/11;
 	grid-row: 2/5;
-	background-color: blue;
+	background-color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 	align-items: center;
 	position: relative;
-}
-.icon-wrapper {
-	top: 320px;
-	left: 100;
-	position: fixed;
 }
 
 .rightmenu-icon {
