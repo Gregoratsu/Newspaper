@@ -17,7 +17,7 @@ html {
 main {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-auto-rows: 1fr;
+	grid: gap 10px;
 }
 .header {
 	grid-column: 1/3;
@@ -80,6 +80,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	padding: 10px;
 }
 
 .leftmenu {
@@ -106,15 +107,15 @@ main {
 	width: 20px;
 }
 
-.article-grid {
+.top-article-grid {
 	grid-column: 2/10;
 	grid-row: 3/5;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 1fr;
-	padding: 10px;
+	grid: gap 10px;
 	justify-content: center;
 }
+
 .article {
 	display: flex;
 	flex-direction: column;
@@ -128,16 +129,41 @@ main {
 }
 
 .article-image img {
-	padding: 5px;
+	padding: 10px;
 	object-fit: cover;
 	width: 100%;
 	height: 33vh;
 }
 
 .article-text {
-	padding: 5px;
+	padding: 10px;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: medium;
+}
+
+.center-page {
+	grid-column: 1/11;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-auto-rows: 1fr;
+	padding: 10px;
+	justify-content: center;
+}
+.center-article-grid {
+	grid-column: 2/10;
+}
+
+.center-article {
+	display: flex;
+	flex-direction: row;
+}
+.center-article-image img {
+	padding: 10px;
+	object-fit: cover;
+	width: 33vw;
+	height: 50vh;
 }
 
 .spyglass {
