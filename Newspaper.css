@@ -10,7 +10,7 @@ html {
 
 @media only screen and (max-width: 600px) {
 	body {
-		background-color: lightblue;
+		background-color: lightgrey;
 	}
 }
 
@@ -19,24 +19,14 @@ main {
 	grid-template-columns: repeat(10, 1fr);
 	grid: gap 10px;
 }
-.header {
-	grid-column: 1/3;
-	grid-row: 1/2;
-	background: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-	position: sticky;
-}
+
 .navigation {
-	grid-column: 3/11;
+	grid-column: 1/11;
 	grid-row: 1/2;
 	background: black;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	position: sticky;
 	padding: 20px;
 }
 
@@ -87,6 +77,38 @@ main {
 	grid-column: 1/2;
 	grid-row: 2/5;
 	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+}
+.leftmenu-icon {
+	text-decoration: none;
+	color: white;
+	margin: 30px;
+	font-size: 60px;
+	transition: 0s;
+}
+
+.leftmenu-icon:hover,
+.leftmenu-icon:active {
+	color: red;
+}
+
+.leftmenu-sub {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	rotate: 90deg;
+	margin: 30px;
+}
+
+.menu-line {
+	margin: 2px;
+	background-color: white;
+	height: 3px;
+	width: 20px;
 }
 
 .rightmenu {
@@ -97,14 +119,30 @@ main {
 	flex-direction: column;
 	justify-content: end;
 	align-items: center;
-	position: relative;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
 }
 
+.rightmenu-sub {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	rotate: 90deg;
+	margin: 30px;
+}
 .rightmenu-icon {
+	text-decoration: none;
 	color: white;
-	margin: 20px;
-	height: 20px;
-	width: 20px;
+	margin: 30px;
+	font-size: 60px;
+	transition: 0s;
+}
+
+.rightmenu-icon:hover,
+.rightmenu-icon:active {
+	color: red;
 }
 
 .top-article-grid {
@@ -126,6 +164,12 @@ main {
 	align-self: center;
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 10px;
+	transition: 0s;
+}
+
+.article-header:hover,
+.article-header:active {
+	color: red;
 }
 
 .article-image img {
@@ -174,4 +218,12 @@ main {
 
 .spyglassmaster {
 	display: flex;
+	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.top-article-grid {
+		background-color: blue;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
