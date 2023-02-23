@@ -8,12 +8,6 @@ html {
 	font-size: 62.5%;
 }
 
-@media only screen and (max-width: 600px) {
-	body {
-		background-color: lightgrey;
-	}
-}
-
 main {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
@@ -180,11 +174,12 @@ main {
 }
 
 .article-text {
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: medium;
+	width: 25vw;
 }
 
 .center-page {
@@ -221,9 +216,35 @@ main {
 	color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+	.navigation {
+		display: flex;
+		flex-direction: wrap;
+	}
+}
+
+@media only screen and (max-width: 700px) {
 	.top-article-grid {
-		background-color: blue;
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.center-article {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.navigation {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.hyperlink {
+		padding: 5px;
 	}
 }
